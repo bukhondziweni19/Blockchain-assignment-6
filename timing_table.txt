@@ -1,0 +1,16 @@
+TIMING TABLE (Part A (b))
+Measured on the machine that ran mining.py. Attempts are deterministic;
+wall-clock seconds and hash rates are not.
+==============================================================================
+Difficulty  Expected    Mean        Median      Mean secs   Hashes/sec
+------------------------------------------------------------------------------
+1,024       1,024       1,155       671         0.009       124,097
+4,096       4,096       4,594       3,290       0.034       133,872
+16,384      16,384      13,652      13,639      0.104       131,093
+65,536      65,536      51,113      18,359      0.387       131,941
+262,144     262,144     281,999     208,667     2.161       130,493
+------------------------------------------------------------------------------
+Whole study: 1,762,564 hashes in 13.48 seconds, 130,745 hashes per second overall
+Hash rate ranged from 124,097 to 133,872 per second, a difference of 8 percent.
+Narrow enough to treat as constant, confirming that difficulty alone
+changed between the levels.
